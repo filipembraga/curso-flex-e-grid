@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+
+@font-face {
+    font-family: 'icones';
+    src: url(../assets/font/icones.ttf);
+}
+
+:root {
+    --cor-fundo: #1D232A;
+    --cor-fundo-navegacao: #15191C;
+    --cor-texto: #FFFFFF;
+    --cor-marca: #E7CA33;
+    
+    --fonte-principal: 'Open Sans', 'icones', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;   
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+    text-decoration: none;
+    box-sizing: border-box;
+    color: var(--cor-texto);
+}
+
+button {
+    background-color: transparent;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    font-family: var(--fonte-principal);
+}
+
+.navegacao {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5em 1em;
+    background-color: var(--cor-fundo-navegacao);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+}
+
+.navegacao__menu i::before {
+    content: "\e904";
+    font-size: 24px;
+}
+
+.navegacao__notificacao i::before {
+    content: "\e906";
+    font-size: 24px;
+}
